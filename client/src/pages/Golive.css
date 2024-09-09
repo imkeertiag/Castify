@@ -1,0 +1,12 @@
+.sidebar-open.golive {
+    margin-left: 200px; /* Matches the width of the open sidebar */
+    width: calc(100% - 200px); /* Adjusts to occupy the remaining space */
+  }
+  
+  .sidebar-collapsed.golive {
+    margin-left: 40px; /* Matches the width of the collapsed sidebar */
+    width: calc(100% - 40px); /* Adjusts to occupy the remaining space */
+  }
+  .golive-img{
+    border-radius: 3%;
+  }

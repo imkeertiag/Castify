@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    /* font-family: 'Special Elite'; */
+    font-family: sans-serif;
+    font-weight: 400;
+  font-style: normal;
+}
+/* Base styles for light mode */
+:root {
+  --background-color: #f9f9f9;
+  --navbar-color: #ffffff;
+  --sidebar-color: #ffffff;
+  --text-color: #000;
+  --dropdown-bg: #fff;
+  --dropdown-hover: #f1f1f1;
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --sidebar-hr-color: #e0e0e0;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  --background-color: #282828;
+  --navbar-color: #282828;
+  --sidebar-color: #282828;
+  --text-color: #fff;
+  --dropdown-bg: #444;
+  --dropdown-hover: #555;
+  --box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+  --sidebar-hr-color: #838181;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.sidebar {
+  width: 200px; 
+  background-color: #333;
+  color: #fff; 
+  position: fixed; 
+  height: 100vh;
+  transition: width 0.3s; 
+}
+
+.dashboard {
+  margin-left: 200px; 
+  flex: 1;
+  padding: 20px;
+}

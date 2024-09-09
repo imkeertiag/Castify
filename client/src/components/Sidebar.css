@@ -1,0 +1,47 @@
+.sidebar {
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+    transition: width 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .sidebar.open {
+    width: 200px;
+  }
+  
+  .sidebar.collapsed {
+    width: 60px;
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sidebar-item:hover {
+    background-color: var(--dropdown-hover);
+  }
+  
+  .sidebar-icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--sidebar-hr-color);
+    margin: 10px 0;
+  }
+  
